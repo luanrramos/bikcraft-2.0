@@ -1,0 +1,127 @@
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  margin: 0rem;
+  display: grid;
+  gap: 60px;
+  justify-items: center;
+  margin-top: 60px;
+  background-color: #f7f7f7;
+}
+
+p,
+h1,
+h2,
+h3 {
+  margin: 0px;
+}
+
+.menu{
+    margin: 0px;
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+.menu a{
+    display: block;
+    text-decoration: none;
+    border-radius: 4px;
+    padding: 1rem 2rem ;
+    background-color: white;
+    border: 2px solid #fff;
+    color: #000;
+}
+.menu li a:hover{
+    border-color: #e21;
+}
+
+.conteudo{
+    font-size: 1.3rem;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+.introducao{
+    padding: 40px;
+    gap: 20px;
+    background-color: white;
+    display: grid;
+    text-align: right;
+    justify-items: end;
+    align-content: center;
+    position: relative;
+}
+.introducao::before{
+    content: "";
+    top: 30px;
+    right: -30px;
+    position: absolute;
+    width: 60px;
+    height: 4px;
+    background-color: #e21;
+}
+.botao{
+    display: grid;
+    padding: 1rem 2rem;
+    background: #e21;
+    color: #fff;
+    border-radius: 4px;
+    text-transform: uppercase;
+    text-decoration: none;
+    font-size: 1rem;
+}
+
+.botao:hover{
+    background: #900;
+}
+
+.img{
+    max-width: 100%;
+    grid-column: 2;
+}
+
+.subtitulo{
+    display: grid;
+    color: rgba(0, 0, 0, 0.2);
+    font-size: 4rem;
+    font-weight: bold;
+    text-transform: uppercase;
+    text-align: right;
+    padding: 40px;
+    align-items: center;
+}
+.vantagens{
+    display: grid;
+    background-color: white;
+    padding: 40px;
+
+}
+.vantagens-item{
+    display: grid;
+    grid-template-columns: auto 1fr;
+    gap: 10px 20px;
+    padding: 15px;
+    border-left: 4px solid transparent;
+}
+.vantagens-item img{
+    place-self: center;
+}
+.vantagens-item p{
+    grid-column: 2;
+}
+.vantagens-item:nth-child(odd){
+  background-color: #f7f7f7;
+}
+.vantagens-item:hover{
+    border-color: #e21;
+}
+.vantagens h3{
+    font-size: 1.25rem;
+}
+.rodape{
+    padding: 40px;
+    text-align: center;
+    font-size: 1.3rem;
+    font-weight: 500;
+    background-color: white;
+    margin-top: 60px;
+}
